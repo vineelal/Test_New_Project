@@ -1,16 +1,12 @@
 <wm-partial data-ng-controller="leftnavPageController" name="leftnav" type="leftnav">
-    <wm-nav name="leftnavigation" type="pills" layout="stacked">
-        <wm-nav-item name="list_dashboard">
-            <wm-anchor caption="Dashboard" name="dashboardLink" iconclass="wi wi-bar-graph"></wm-anchor>
-        </wm-nav-item>
-        <wm-nav-item name="list_order">
-            <wm-anchor caption="Pending Orders" name="orderLink" iconclass="wi wi-file"></wm-anchor>
-        </wm-nav-item>
-        <wm-nav-item name="list_inventory">
-            <wm-anchor caption="Inventory" name="inventoryLink" iconclass="wi wi-tag"></wm-anchor>
-        </wm-nav-item>
-        <wm-nav-item name="list_support">
-            <wm-anchor caption="Support Calls" name="supportLink" iconclass="wi wi-envelope"></wm-anchor>
-        </wm-nav-item>
-    </wm-nav>
+
+    <wm-layoutgrid name="layoutgrid1" height="100%" class="gridleftnav">
+        <wm-gridrow name="gridrow1">
+
+            <wm-gridcolumn columnwidth="10" name="gridcolumn2" height="100%" class="col-right-border">
+                <wm-container name="container1" content="Graph" height="100%" margin="unset unset unset 2em"></wm-container>
+            </wm-gridcolumn>
+        </wm-gridrow>
+    </wm-layoutgrid>
+
 </wm-partial>
